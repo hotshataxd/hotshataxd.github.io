@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>3B Productions</title>
+
+</head>
+<body background="black.jpg">
+	<video class="video-container" autoplay="autoplay" loop="true" muted>
+  <source src="3bcs.mp4" type="video/mp4">
+  <source src="3bcs.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</body>
+<style>
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 98%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+</style>
+</html>
